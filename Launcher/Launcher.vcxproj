@@ -70,20 +70,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Program Files\Java\jdk1.8.0_191\include\win32;C:\Program Files\Java\jdk1.8.0_191\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\Java\jdk1.8.0_191\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files\Java\jdk1.8.0_181\include\win32;C:\Program Files\Java\jdk1.8.0_181\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk1.8.0_181\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Program Files\Java\jdk1.8.0_191\include\win32;C:\Program Files\Java\jdk1.8.0_191\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\Java\jdk1.8.0_191\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files\Java\jdk1.8.0_181\include\win32;C:\Program Files\Java\jdk1.8.0_181\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk1.8.0_181\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Program Files\Java\jdk1.8.0_191\include\win32;C:\Program Files\Java\jdk1.8.0_191\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\Java\jdk1.8.0_191\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files\Java\jdk1.8.0_181\include\win32;C:\Program Files\Java\jdk1.8.0_181\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk1.8.0_181\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Program Files\Java\jdk1.8.0_191\include\win32;C:\Program Files\Java\jdk1.8.0_191\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\Java\jdk1.8.0_191\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files\Java\jdk1.8.0_181\include\win32;C:\Program Files\Java\jdk1.8.0_181\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk1.8.0_181\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

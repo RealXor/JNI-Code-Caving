@@ -9,10 +9,32 @@ int main ( )
 	ZeroMemory ( &inject, sizeof ( data ) );
 
 	/* set all strings */
-	strcpy ( inject.messageCh, "Hello, from target process!" );
+	strcpy ( inject.nonForgeCh, "It seems that we didn't inject into Minecraft, uh oh!" );
 	strcpy ( inject.titleCh, "Hakery.club" );
 	strcpy ( inject.jvmCh, "jvm.dll" );
+	strcpy ( inject.successCh, "Succesfully executed!" );
 	strcpy ( inject.createdVMsCh, "JNI_GetCreatedJavaVMs" );
+	strcpy ( inject.launchWrapperClass, "net/minecraft/launchwrapper/Launch" );
+	strcpy ( inject.launchClassLoader, "net/minecraft/launchwrapper/LaunchClassLoader" );
+	strcpy ( inject.chClassLoader, "classLoader" );
+	strcpy ( inject.chClassLoaderLaunch, "Lnet/minecraft/launchwrapper/LaunchClassLoader;" );
+	strcpy ( inject.entry, "run" );
+	strcpy ( inject.voidd, "()V" );
+	strcpy ( inject.javaIoFile, "java/io/File" );
+	strcpy ( inject.strVoid, "(Ljava/lang/String;)V" );
+	strcpy ( inject.fileToURI, "()Ljava/net/URI;" );
+	strcpy ( inject.javaNetUri, "java/net/URI" );
+	strcpy ( inject.javaNetUrl, "java/net/URL" );
+	strcpy ( inject.urlClassLoader, "java/net/URLClassLoader" );
+	strcpy ( inject.urlClassLoaderInit, "([Ljava/net/URL;Ljava/lang/ClassLoader;)V" );
+	strcpy ( inject.loadClassParams, "(Ljava/lang/String;)Ljava/lang/Class;" );
+	strcpy ( inject.init, "<init>" );
+	strcpy ( inject.toURI, "toURI" );
+	strcpy ( inject.loadClass, "loadClass" );
+	strcpy ( inject.fileToURL, "()Ljava/net/URL;" );
+	strcpy ( inject.toURL, "toURL" );
+	strcpy ( inject.mainClass, "me.zor.hakerydotclub.hakery" );
+	strcpy ( inject.pathToJar, "C:\\hakeydotclub.jar" );
 
 	/* load user32 so we can get access to messagebox*/
 	auto user32 = LoadLibrary ( "user32.dll" );
@@ -63,7 +85,7 @@ int main ( )
 		CloseHandle ( hProcess );
 		std::cout << "Executed succesfully, data -> " << std::endl;
 		std::cout << "Mem. of Function: 0x" << std::hex << remote << std::endl;
-		std::cout << "Mem. of Data:     0x" << std::hex << (void*)pData << std::endl;
+		std::cout << "Mem. of Data    : 0x" << std::hex << (void*)pData << std::endl;
 		std::cin.get ( );
 	}
 	else
